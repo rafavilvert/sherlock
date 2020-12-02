@@ -36,7 +36,7 @@ curl -X GET http://localhost:3000/count
 ```
 
 ### Using intermitent internal server error (500)
-First of all you need to use this feature is set the environment variables at [docker-compose.yaml](https://github.com/rafavilvert/Test_Request/blob/master/docker-compose.yml#L4)
+First of all you need to use this feature is set the environment variables at [docker-compose.yaml](https://github.com/rafavilvert/sherlock/blob/master/docker-compose.yml#L4)
 
 - ERROR_FLAG: This variable enable or disable intermitent errors, allow values: enable/disable
 - ERROR_OFTEN: This variable will indicate how oftem your request will return error (500).
@@ -49,4 +49,4 @@ Here you can determinate the time in seconds that your application will wait for
 http://localhost:3000/sleep/10
 ```
 ### Get all headers from request
-You can verify the headers data getting from request trought ```http://localhost:3000/header/index```
+You can verify the headers data getting from request trought ```http://localhost:3000/header```
