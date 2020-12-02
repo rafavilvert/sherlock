@@ -1,0 +1,15 @@
+<h1>Header List</h1>
+<table>
+<table style="width:100%">
+  <tr>
+    <th>Header Name </th>           
+    <th>Header Value </th>
+  </tr>
+  <br>
+ <% request.headers.each do |k, v| %>
+  <tr>
+    <td><%= k %></td>  
+    <td><%= v %></td><td>
+  </tr>
+  <% end %>
+ </table>
