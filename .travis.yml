@@ -9,5 +9,8 @@ before_install:
 
 script:
 - docker run -it rafavilvert/sherlock:${TRAVIS_JOB_ID} rspec
-- docker login --username=$DOCKER_USER --password=$DOCKER_PASS && \
-  docker push rafavilvert/sherlock:${TRAVIS_JOB_ID}
+
+
+deploy:
+  provider: script
+  script: bash echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push ${DOCKER_USERNAME}/sherlock:${TRAVIS_JOB_ID}
