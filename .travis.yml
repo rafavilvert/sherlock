@@ -1,0 +1,11 @@
+language: ruby
+
+services:
+  - docker
+
+before_install:
+- docker build -t rafavilvert/sherlock:${TRAVIS_JOB_ID} .
+- docker run carlad/sinatra /bin/sh -c "yarn install --check-files"
+
+script:
+- docker run -it rafavilvert/sherlock:${TRAVIS_JOB_ID} rspec
