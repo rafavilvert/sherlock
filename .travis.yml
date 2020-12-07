@@ -14,6 +14,7 @@ script:
 deploy:
   provider: script
   script: bash echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push ${DOCKER_USERNAME}/sherlock:${TRAVIS_JOB_ID}
+  provider: pages
   git-hub-token: $GITHUB_TOKEN
   on:
     branch: master
