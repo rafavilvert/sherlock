@@ -19,5 +19,5 @@ deploy:
 
 after_success:
   provider: script
-  - docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
-  - docker push ${DOCKER_USER}/sherlock:${TRAVIS_JOB_ID}
+    - docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+    - docker push ${DOCKER_USER}/sherlock:${TRAVIS_JOB_ID}
