@@ -1,6 +1,6 @@
 # Sherlock
 
-This application has the objetive to help you make test in your infrastructure and it can be used to desmonstrate test in diferent versions.
+This application has the objetive to help you make test in your infrastructure and it can be used to demonstrate test in diferent versions.
 
 ### Requirements 
 * Docker 
