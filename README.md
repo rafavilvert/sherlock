@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/rafavilvert/sherlock.svg?branch=master)](https://travis-ci.com/github/rafavilvert/sherlock)
+[![Build Status](https://travis-ci.com/rafavilvert/sherlock.svg?branch=master&status=started)](https://travis-ci.com/github/rafavilvert/sherlock)
 
 # Sherlock
 
