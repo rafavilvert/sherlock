@@ -51,4 +51,4 @@ Here you can determinate the time in seconds that your application will wait for
 http://localhost:3000/sleep/10
 ```
 ### Get all headers from request
-You can verify the headers data getting from request trought ```http://localhost:3000/header```
+You can verify the headers data getting from request trought ```http://localhost:3000/header```.
