@@ -1,7 +1,4 @@
 [![Build Status](https://travis-ci.com/rafavilvert/sherlock.svg?branch=master)](https://travis-ci.com/github/rafavilvert/sherlock)
-[![Coverage Status](https://coveralls.io/repos/rafavilvert/sherlock/badge.png?branch=master)](https://coveralls.io/r/rafavilvert/sherlock?branch=master)
-[![Total Downloads](https://poser.pugx.org/rafavilvert/sherlock/d/total.png)](https://packagist.org/packages/rafavilvert/sherlock)
-[![Latest Stable Version](https://poser.pugx.org/rafavilvert/sherlock/v/stable.png)](https://packagist.org/packages/rafavilvert/sherlock)
 
 # Sherlock
 
