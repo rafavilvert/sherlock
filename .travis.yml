@@ -13,7 +13,8 @@ script:
 
 deploy:
   provider: script
-  script: bash echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin; docker push ${DOCKER_USER}/sherlock:${TRAVIS_JOB_ID}
+  script: bash echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+  script: docker push ${DOCKER_USER}/sherlock:${TRAVIS_JOB_ID}
   provider: pages
   git-hub-token: $GITHUB_TOKEN
   on:
