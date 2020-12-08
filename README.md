@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.com/rafavilvert/sherlock.svg?branch=master&status=started)](https://travis-ci.com/github/rafavilvert/sherlock)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2be199f67ab803ef5b3b/maintainability)](https://codeclimate.com/github/rafavilvert/sherlock/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/2be199f67ab803ef5b3b/test_coverage)](https://codeclimate.com/github/rafavilvert/sherlock/test_coverage)
 
 # Sherlock
 
