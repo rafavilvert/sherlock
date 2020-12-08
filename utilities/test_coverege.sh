@@ -18,7 +18,7 @@ pre_set(){
 }
 
 run_spec(){
-  docker run -it rafavilvert/sherlock:${TRAVIS_JOB_ID} rspec
+  docker run -e CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID -it rafavilvert/sherlock:${TRAVIS_JOB_ID} rspec
 }
 
 pre_set 
