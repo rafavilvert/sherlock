@@ -19,7 +19,7 @@ pre_set(){
 }
 
 run_spec(){
-  docker run -e CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID -it rafavilvert/sherlock:${TRAVIS_JOB_ID} rspec
+  bundle exec rspec ./rspec
 }
 
 pre_set 
