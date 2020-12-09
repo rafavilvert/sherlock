@@ -8,6 +8,7 @@ after_build(){
 }
 
 pre_set(){
+  env
   if [ "X$CC_TEST_REPORTER_ID" == "X" ] ; then 
     echo "CC_TEST_REPORTER_ID variable is nil"
     exit 1
