@@ -19,7 +19,7 @@ pre_set(){
 }
 
 run_spec(){
-  bundle exec rspec ./rspec
+  bundle exec rspec ./spec
 }
 
 pre_set 
