@@ -4,7 +4,7 @@ before_build(){
 }
 
 after_build(){
-  ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  ./cc-test-reporter after-build
 }
 
 pre_set(){
