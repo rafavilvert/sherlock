@@ -8,7 +8,7 @@ before_install:
 - docker run rafavilvert/sherlock:${TRAVIS_JOB_ID} /bin/sh -c "yarn install --check-files"
 
 script:
-- docker run -e CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID -it rafavilvert/sherlock:${TRAVIS_JOB_ID} ./utilities/test_coverege.sh
+- docker run -e CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID -e TRAVIS_TEST_RESULT=$TRAVIS_TEST_RESULT -it rafavilvert/sherlock:${TRAVIS_JOB_ID} ./utilities/test_coverege.sh
 
 
 after_success:
