@@ -3,15 +3,15 @@ language: ruby
 services:
   - docker
 
-before_install:
-- docker build -t rafavilvert/sherlock:${TRAVIS_JOB_ID} .
-- docker run rafavilvert/sherlock:${TRAVIS_JOB_ID} /bin/sh -c "yarn install --check-files"
+# before_install:
+# - docker build -t rafavilvert/sherlock:${TRAVIS_JOB_ID} .
+# - docker run rafavilvert/sherlock:${TRAVIS_JOB_ID} /bin/sh -c "yarn install --check-files"
 
 script:
-- bash env
-- docker run -it rafavilvert/sherlock:${TRAVIS_JOB_ID} ./utilities/test_coverege.sh
+- echo $CC_TEST_REPORTER_ID
+#- docker run -it rafavilvert/sherlock:${TRAVIS_JOB_ID} ./utilities/test_coverege.sh
 
 
-after_success:
-  - docker login -u $DOCKER_USER -p $DOCKER_PASS ;
-    docker push rafavilvert/sherlock:${TRAVIS_JOB_ID}
+# after_success:
+#   - docker login -u $DOCKER_USER -p $DOCKER_PASS ;
+#     docker push rafavilvert/sherlock:${TRAVIS_JOB_ID}
